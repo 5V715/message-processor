@@ -1,0 +1,16 @@
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 10
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/message_processor'
+    username: 'message_processor'
+    password: 'message_processor'
+  jooq:
+    sqlDialect: 'POSTGRES'
+
+processor:
+  initialDelay: 5000
+  interval: 1500

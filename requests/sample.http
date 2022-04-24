@@ -1,0 +1,38 @@
+GET localhost:8080/all
+###
+POST localhost:8080/job
+Content-Type: application/json
+
+{
+  "a" : "b"
+}
+
+###
+
+POST localhost:8080/job
+Content-Type: application/json
+
+{
+  "type": "SAY_SOMETHING",
+  "text" : "hello"
+}
+
+###
+
+POST localhost:8080/job
+Content-Type: application/json
+
+{
+  "type": "BREAK",
+  "seconds" : 3
+}
+
+###
+
+POST localhost:8080/job
+Content-Type: application/json
+
+{
+  "type": "BOOM",
+  "text" : "burn!"
+}
